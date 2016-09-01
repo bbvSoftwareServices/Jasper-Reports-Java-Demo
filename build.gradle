@@ -19,6 +19,7 @@ repositories {
     // Use 'jcenter' for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    // repository to resolve all dependencies for jasperreports
     maven {
         url "http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/"
     }
@@ -27,8 +28,11 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
-    compile 'org.slf4j:slf4j-api:1.7.21'
+    //compile 'org.slf4j:slf4j-api:1.7.21'
+
+    // jasper reports dependency
     compile 'net.sf.jasperreports:jasperreports:6.3.0'
+    // dependency for added graphics processing
     compile 'org.apache.xmlgraphics:batik-bridge:1.8'
     compile 'org.apache.xmlgraphics:xmlgraphics-commons:2.1'
 
