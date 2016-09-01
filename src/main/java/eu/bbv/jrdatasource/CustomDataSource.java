@@ -6,8 +6,11 @@ import net.sf.jasperreports.engine.JRField;
 
 public class CustomDataSource implements JRDataSource {
 
+    /*
+    Testdaten für den Demo Report
+     */
     private static final String[] names = {"Frank","Josef","Marco","Karl","Lenny","Homer","Teodor","Leopold"};
-    private static final int[] ages = { 1,2,3,4,5,6,7,8};
+    private static final Integer[] ages = { 1,2,3,4,5,6,7,8};
     private int pos = -1;
 
     @Override
@@ -27,6 +30,13 @@ public class CustomDataSource implements JRDataSource {
         else return "";
     }
 
+    /*
+     * Diese Methode dient dazu die DataSource im Report Designer zu initialisieren.
+     * Man bindet das ganze als Data Adapter in JasperSoft Studio ein.
+     * Hier wählt man Custom JRDatasource. Damit das ganze funktioniert muss man das Jar Fiel dieses Projekts
+     * zum ClassPath hinzufügen. JaspersoftStudio sollte diese Option im laufe des Setup Prozesses anbieten.
+     * Dort giebt man den vollen Pfad dieser Klasse an und den Namen dieser Methode, ohne die Klammern.
+     */
     public static JRDataSource getDataSource(){
         return new CustomDataSource();
     }
