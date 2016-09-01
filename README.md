@@ -13,7 +13,7 @@ Ein jar dieses Projekts kann man erstellen indem man
 aufruft.
 
 Dann wird eine Datei mit dem namen 'jasperreports' im Unterverzeichnis 'build/libs/' erstellt.
-Diese Datei muss man dann in JasperSoft STudio einbinden damit man damit Rumerxperimentieren kann.
+Diese Datei muss man dann in JasperSoft Studio einbinden damit man damit Rumerxperimentieren kann.
 Mit
 
 `gradlew run`
