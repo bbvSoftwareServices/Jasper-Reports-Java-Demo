@@ -17,3 +17,5 @@ libraryDependencies += "org.apache.xmlgraphics" % "xmlgraphics-commons" % "2.1"
 resolvers += "jasperSoft Repository" at "http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/"
 
 resolvers += "JasperReports Repository" at "http://jasperreports.sourceforge.net/maven2/"
+
+fork in run := true
